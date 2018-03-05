@@ -1,0 +1,12 @@
+function zdot = odefun(t,z)
+M=1;m=1;l=0.3;g=10;
+zdot(1)=z(2);
+f= (m*l*sin(z(1))+cos(z(1))*(z(2)).^2-(m+M)*g*sin(z(1)))/...
+    (m*l*(cos(z(1))^2-2*(m+M)*l);
+
+g=(cos(z(1)))/(m*l*(cos(z(1))).^2-2*(m+M)*l);
+u=-f-kp*z(1)-kd
+zdot(2)=f(x)+g(x)*u
+zdot = zdot';
+
+end
